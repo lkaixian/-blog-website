@@ -1,0 +1,28 @@
+name: Deploy to Firebase
+
+on:
+  push:
+    branches:
+      - main  # Change this if your main branch is different
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Install Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: 18
+
+    - name: Install Dependencies
+      run: npm install  # Adjust if you're using yarn or pnpm
+
+    - name: Build Project
+      run: npm run build  # Adjust this based on your framework (e.g., Vue, React, Angular)
+
+    - name: Deploy to Firebase
+      run: firebase deploy --token "${{ secrets.FIREBASE_TOKEN }}"

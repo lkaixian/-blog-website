@@ -1,0 +1,23 @@
+[
+    {
+        "id": "project1",
+        "title": "Project 1",
+        "description": "A short description of Project 1...",
+        "date": "Published: Jan 2025",
+        "image": "assets/images/project1.jpg"
+    },
+    {
+        "id": "project2",
+        "title": "Project 2",
+        "description": "A short description of Project 2...",
+        "date": "Published: Dec 2024",
+        "image": "assets/images/project2.jpg"
+    },
+    {
+        "id": "project3",
+        "title": "Project 3",
+        "description": "A short description of Project 3...",
+        "date": "Published: Nov 2024",
+        "image": "assets/images/project3.jpg"
+    }
+]
